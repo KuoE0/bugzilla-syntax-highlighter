@@ -6,8 +6,12 @@
  */
 
 'use strict';
+hljs.configure({
+	languages: ['diff']
+});
 
 var pre_elem = document.getElementsByTagName('pre');
+
 for (var i = 0; i < pre_elem.length; ++i) {
 	hljs.highlightBlock(pre_elem[i]);
 }
